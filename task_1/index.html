@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-toggleable-md ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Task1</a>
+        </div>
+      </nav>
+
+    <div class="container-md my-5  ">
+        <div class="row">
+            <div class="col-8 mt-3">
+                <input id="Name" type="text" class="form-control" placeholder=" Name" aria-label="First name">
+            </div>
+            <div class="col-8 mt-3 ">
+                <input id="Father_Name" type="text" class="form-control" placeholder="Father Name" aria-label="Last name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 mt-3">
+                <input id="Gmail" type="text" class="form-control" placeholder=" Mail" aria-label="First name">
+            </div>
+            <div class="col-8 mt-3">
+                <input id="Number" type="text" class="form-control" placeholder="Phone" aria-label="Last name">
+            </div>
+        </div>
+        <button onclick="set_LocalStorage()" id="send" type="button" class="btn btn-dark my-3">send</button>
+        <button onclick="get_LocalStorage()" type="button" class="btn btn-success my-3">checked</button>
+    </div>
+
+    <div class="container-sm">
+        <div class="col-6 ">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    checked data
+                </a>
+                <ul class="list-group list-group-flush my-5">
+                    <li id="name" class="list-group-item my-1"></li>
+                    <li id="fname" class="list-group-item my-1"></li>
+                    <li id="gmail" class="list-group-item my-1"></li>
+                    <li id="phone" class="list-group-item my-1"></li>
+                    <li  class="list-group-item my-1"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
